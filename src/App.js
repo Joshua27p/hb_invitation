@@ -22,6 +22,7 @@ const App = () => {
         <p>DIRECCION : AVENIDA DEL AIRE 1250</p>
         <p>HORA: apartir de las 9pm</p>
         <p>DIA 27/09</p>
+        <P>VENGAN TODOS LOS QUE PUEDAN</P>
         <p>SOLO ACEPTAMOS RONES</p>
       </Modal>
     </div>
