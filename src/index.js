@@ -1,11 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./styles.css"; // Asegúrate de que este archivo exista o comenta esta línea si no tienes un archivo CSS
+import ReactDOM from "react-dom/client"; // Asegúrate de importar desde 'react-dom/client'
+import App from "./app";
+import "./styles.css";
 
-const App = () => (
-  <div>
-    <h1>Hello, React!</h1>
-  </div>
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Renderiza la aplicación en el contenedor
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-
-ReactDOM.render(<App />, document.getElementById("root"));

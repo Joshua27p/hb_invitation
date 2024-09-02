@@ -1,0 +1,24 @@
+.music-section__container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente fila */
+  justify-content: space-around; /* Espacio uniforme entre las tarjetas */
+  gap: 16px; /* Espacio entre las tarjetas */
+}
+
+.music-section__container > .Card {
+  flex: 1 1 45%; /* Las tarjetas ocupan 45% de ancho en pantallas más grandes */
+  max-width: 50%; /* Maximo 45% del contenedor */
+}
+
+@media (max-width: 768px) {
+  /* Cuando la pantalla sea menor a 768px */
+  .music-section__container {
+    flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+    align-items: center; /* Centra las tarjetas en pantallas pequeñas */
+  }
+
+  .music-section__container > .Card {
+    flex: 1 1 100%; /* Cada tarjeta ocupa el 100% del ancho disponible */
+    max-width: 100%; /* Maximo 100% del contenedor */
+  }
+}
