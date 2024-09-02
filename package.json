@@ -4,9 +4,12 @@
     "react-dom": "^18.3.1",
     "styled-components": "^6.1.13"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "npx webpack --mode production"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
